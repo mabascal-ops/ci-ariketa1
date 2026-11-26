@@ -1,0 +1,10 @@
+name: ariketa1
+on: 
+  push:
+    branches: [ "main" ]
+jobs:
+  holaMundo:
+     runs-on: ubuntu-latest
+     steps:
+       - uses: actions/checkout@v4
+       - run: echo "Hola Mundo"
